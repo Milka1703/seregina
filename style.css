@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, li{
+    font-family: 'Playfire Display', serif;
+}
+
+p, button, input{
+    font-family: 'Roboto', sans-serif;
+}
+
+body, h1, p, h2, h3{
+    margin: 0;
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+#cover, #about, #catalog, #blog, #carousel_container{
+    margin-bottom: 80px;
+}
+
+li{
+    list-style: none;
+    margin-left: 50px;
+    font-size: 24px;
+}
+
+ul{
+    display: flex;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: darkseagreen;
+}
+
+#cover{
+    background-image: url(./images/main.png);
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    font-size: 64px;
+    margin-bottom: 17px;
+}
+
+.cover_subtitle{
+    font-size: 36px;
+    margin-bottom: 36px;
+}
+
+button{
+    font-size: 24px;
+    padding: 17px 26px; /*Внутренние отступы*/
+    background-color: rgb(255, 255, 255, 0);
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+#about{
+    display: flex;
+    align-items: center;
+}
+
+.about_description{
+    margin-left: 77px;
+}
+
+h2{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 24px;
+}
+
+.card_description{
+    display: flex;
+    justify-content: space-between;
+    width: 367px;
+    margin-top: 23px;
+    margin-bottom: 30px;
+}
+
+.section_header{
+    margin-bottom: 60px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+#form{
+    background-image: url(./images/form_bg.png);
+    height: 50vh;
+    display:flex;
+    align-items: center;
+}
+
+h3{
+    font-size: 64px;
+}
+
+input{
+    font-size: 24px;
+    padding: 17px 26px;
+    margin-top: 23px;
+    margin-bottom: 30px;
+    border: 1px solid black;
+}
+
+.blog_image{
+    margin-bottom: 23px;
+}
+
+#contacts{
+    background-image: url(./images/contact_img.png);
+}
+
+.contacts_content{
+    width: 650px;
+}
+
+.contact_position{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50vh;
+}
+
+.footer_content{
+    text-align: center;
+}
+
+.contacts_link{
+    margin-bottom: 10px;
+}
+
+.contacts_header{
+    margin-bottom: 23px;
+}
+
+.slide-first{
+    background-image: url(./images/1.png);
+}
+
+.slide-second{
+    background-image: url(./images/2.png);
+}
+
+.slide-third{
+    background-image: url(./images/3.jpg);
+}
+
+.carousel{
+    margin-bottom: 30px;
+}
+
+.button-container{
+    text-align: center;
+}
+
+#myModal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.modal-content{
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover{
+    color: black;
+    cursor: pointer;
+}
